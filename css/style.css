@@ -1,37 +1,41 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body,h1,h4,p{
-    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+body,
+h1,
+h4,
+p,
+input {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* header  */
 
-header{
+header {
     position: fixed;
     background-color: #29293d;
     height: 90px;
-    width:100%;
+    width: 100%;
     text-align: center;
     z-index: 1;
 }
 
-header ul{
+header ul {
     margin: 20px auto;
 }
 
-header li{
+header li {
     display: inline-block;
 }
 
-header a{
-    color:#f2f2f2;
+header a {
+    color: #f2f2f2;
     display: inline-block;
     width: 120px;
     height: 50px;
@@ -42,78 +46,113 @@ header a{
     transition: background-color 0.5s;
 }
 
-header a:hover{
+header a:hover {
     background-color: #49505F;
 }
 
 /* secion #1 */
 
-#section-1{
+#section-1 {
     min-height: 600px;
     background: transparent;
     position: relative;
 }
 
-#section-1 .section-header{
+#section-1 .section-header {
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     text-align: center;
     width: 100%;
 }
 
-.section-header h1{
-    font-size:70px;
+.section-header h1 {
+    font-size: 70px;
     text-transform: uppercase;
-    color: #f2f2f2;    
+    color: #f2f2f2;
     text-shadow: 2px 2px #000;
     font-weight: lighter;
 }
 
-.section-header h4{
-    font-size:24px;
-    color: #f2f2f2;    
+.section-header h4 {
+    font-size: 24px;
+    color: #f2f2f2;
     text-shadow: 1px 1px #333;
     font-weight: lighter;
 }
 
 /* section #2 */
 
-#section-2{
-    height: 600px;
+#section-2 {
+    min-height: 600px;
     padding: 55px 0px;
-   
 }
 
-#section-2 .section-container{
+#section-2 .section-container {
     display: grid;
     grid-template-columns: repeat(3, 350px);
     align-content: space-evenly;
     justify-content: center;
-    grid-column-gap: 40px;    
+    grid-column-gap: 40px;
 }
 
-#section-2 .section-col{
+#section-2 .section-col {
     background-color: #F2F2F2;
 }
 
-.section-col img{
-    max-width:100%;
-    height:auto;
+.section-col img {
+    max-width: 100%;
+    height: auto;
 }
 
-.section-col .col-text{
-    padding: 0px 15px;
+.section-col .col-text {
+    padding: 0px 20px;
 }
 
-.section-col h3{
+.section-col h3 {
     padding: 15px 0px;
 }
 
-.section-col .col-btn{
-    margin: 20px;
+.section-col .btn-container {
+    text-align: center;
+    margin: 30px;
 }
 
-.green{
+.section-col .col-btn {
+    width: 180px;
+    height: 45px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+/* colors */
+.green-text {
     color: #178A27;
+}
+
+.blue-text{
+    color:#1686C1;
+}
+
+.white-text {
+    color: #FFF;
+}
+
+.grey-text{
+    color: #666666;
+}
+
+.green-bg {
+    background-color: #178A27
+}
+
+.blue-bg{
+    background-color: #1686C1;
+}
+
+.red-bg{
+    background-color: #852406;    
 }
