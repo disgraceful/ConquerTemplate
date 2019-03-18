@@ -84,16 +84,17 @@ header a:hover {
 /* section #2 */
 
 #section-2 {
-    min-height: 600px;
+    height: auto;
     padding: 55px 0px;
 }
 
 #section-2 .section-container {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    align-content: space-evenly;
+    grid-template-columns: repeat(6, 155px); /*  use minmax!*/
+    grid-template-rows: 1fr, 2fr;
     justify-content: center;
-    grid-column-gap: 40px;
+    align-items: start;
+    grid-gap: 50px 30px; 
 }
 
 #section-2 .section-col {
@@ -106,25 +107,40 @@ header a:hover {
 }
 
 .section-col .col-text {
-    padding: 0px 20px;
+    padding: 0 20px 30px 20px;
 }
 
 .section-col h3 {
-    padding: 15px 0px;
+    margin: 15px 0;
 }
 
-.section-col .btn-container {
-    text-align: center;
-    margin: 30px;
+.grid-col-3 p{
+    padding: 15px 0;
+}
+
+.grid-col-2 p{
+    margin: 15px 0 25px 0;
+}
+
+.grid-col-3 .col-btn{
+    margin-right: 50px;
 }
 
 .section-col .col-btn {
-    width: 180px;
+    width: 150px;
     height: 45px;
     cursor: pointer;
     border: 1px solid;
     border-radius: 5px;
     font-size: 18px;
+}
+
+.grid-col-2{
+    grid-column: span 2;
+}
+
+.grid-col-3{
+    grid-column: span 3;
 }
 
 
@@ -145,6 +161,10 @@ header a:hover {
     color: #666666;
 }
 
+.black-text{
+    color: #000
+}
+
 .green-bg {
     background-color: #178A27
 }
@@ -155,4 +175,16 @@ header a:hover {
 
 .red-bg{
     background-color: #852406;    
+}
+
+.white-bg{
+    background-color: #FFF;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.align-end{
+    text-align: end;
 }
