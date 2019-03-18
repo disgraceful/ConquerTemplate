@@ -133,6 +133,7 @@ header a:hover {
     border: 1px solid;
     border-radius: 5px;
     font-size: 18px;
+    transition: all 0.3s ease;
 }
 
 .grid-col-2{
@@ -179,6 +180,22 @@ header a:hover {
 
 .white-bg{
     background-color: #FFF;
+}
+
+.col-btn.red-bg:hover{
+    background: #C9302C;
+}
+
+.col-btn.blue-bg:hover{
+    background:#31B0D5;
+}
+
+.col-btn.green-bg:hover{
+    background: #449D44;
+}
+
+.col-btn.white-bg:hover{
+    background: #E6E6E6 none repeat scroll 0 0;
 }
 
 .align-center{
