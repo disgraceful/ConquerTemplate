@@ -5,6 +5,7 @@
 
 body,
 h1,
+h2,
 h4,
 p,
 input {
@@ -58,7 +59,7 @@ header a:hover {
     position: relative;
 }
 
-#section-1 .section-header {
+.section-header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -74,6 +75,14 @@ header a:hover {
     font-weight: lighter;
 }
 
+.section-header h2{
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #aaa;
+    margin-bottom: 20px;
+}
+
 .section-header h4 {
     font-size: 24px;
     color: #f2f2f2;
@@ -81,6 +90,17 @@ header a:hover {
     font-weight: lighter;
 }
 
+.section-header h5{
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #aaa;
+    margin-bottom: 20px;
+}
+
+.section-header p{
+    line-height: 1.6em;
+    font-size: 18px;
+}
 /* section #2 */
 
 #section-2 {
@@ -91,7 +111,7 @@ header a:hover {
 #section-2 .section-container {
     display: grid;
     grid-template-columns: repeat(6, 155px); /*  use minmax!*/
-    grid-template-rows: 1fr, 2fr;
+    /* grid-template-rows: 1fr 2fr; */
     justify-content: center;
     align-items: start;
     grid-gap: 50px 30px; 
@@ -143,6 +163,99 @@ header a:hover {
 .grid-col-3{
     grid-column: span 3;
 }
+
+/* section 3 */
+
+#section-3{
+    position: relative;
+    background: transparent;
+    height: 290px; 
+}
+
+/* section 4 */
+
+#section-4{
+    height:auto;
+    margin: 40px;
+}
+
+#section-4 .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 255px); /*  use minmax!*/
+    /* grid-template-rows: 1fr 2fr;    */
+    justify-content: center;
+    grid-gap: 40px 40px;
+}
+
+.grid-col{
+    background-color: #F2F2F2;
+}
+
+.grid-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-col h2{
+    font-size:20px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.col-4 h2{
+    margin: 15px 25px 10px 25px;
+}
+
+.grid-col p{
+    padding: 0 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6em
+}
+
+.col-4 p{
+    margin: 5px 5px 10px 5px;
+    margin-bottom: 10px;
+}
+
+
+.grid-col .col-btn{
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.col-1{
+    grid-column: span 1;
+    height: 500px;
+}
+
+.col-4{
+    grid-column: span 4;
+
+}
+
+.col-4 .btn-container{
+    margin: 30px 25px;
+}
+
+.col-4 .col-btn{
+    width: 160px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* colors */
@@ -204,4 +317,10 @@ header a:hover {
 
 .align-end{
     text-align: end;
+}
+
+
+.justify-center{ /*shit code*/
+    width: 70%;
+    margin:0 auto;
 }
