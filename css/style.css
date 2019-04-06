@@ -219,7 +219,6 @@ header a:hover {
     margin-bottom: 10px;
 }
 
-
 .grid-col .col-btn{
     width: 120px;
     height: 45px;
@@ -249,14 +248,99 @@ header a:hover {
 }
 
 
+#section-5{
+    position: relative;
+    background: transparent;
+    height: auto; 
+}
 
+.contact-container{
+    /* height: 100%; */
+    padding-top: 80px;
+    padding-bottom: 40px;
+    width: 680px;
+    margin:0 auto;
+}
 
+.contact-container>h1{
+    margin: 18px;
+}
 
+.contact-quote{
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #000;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+    box-sizing:border-box;
+}
 
+.contact-quote p{
+    font-size:16px;
+    line-height: 1.6em;
+}
 
+.form-container{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
 
+.form-input{
+    outline:none;
+    border: none;
+    background: rgba(242, 242, 242, 0.4);
+    color: #000;
+    display: block;
+    height: 34px;
+    width:100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    line-height: 1.42857143;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
 
+.form-input:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
 
+.form-input::placeholder{
+    color: #000;
+}
+
+textarea.form-input{
+    height:auto;
+}
+
+.form-right,
+.form-left{
+    width:100%;
+}
+
+.btn{
+    background: #262628 none repeat scroll 0 0;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #262628;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #E6E6E6;
+    border-color: #ccc; 
+    color: #262628;
+}
 
 /* colors */
 .green-text {
