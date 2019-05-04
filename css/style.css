@@ -6,8 +6,10 @@
 body,
 h1,
 h2,
+h3,
 h4,
 p,
+div,
 input {
     font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
 }
@@ -72,7 +74,7 @@ header a:hover {
     text-transform: uppercase;
     color: #f2f2f2;
     text-shadow: 2px 2px #000;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 .section-header h2{
@@ -81,6 +83,7 @@ header a:hover {
     text-transform: capitalize;
     text-shadow: 2px 2px #aaa;
     margin-bottom: 20px;
+   
 }
 
 .section-header h4 {
@@ -88,6 +91,7 @@ header a:hover {
     color: #f2f2f2;
     text-shadow: 1px 1px #333;
     font-weight: lighter;
+    font-weight: 500;
 }
 
 .section-header h5{
@@ -264,6 +268,8 @@ header a:hover {
 
 .contact-container>h1{
     margin: 18px;
+    font-weight: 500;
+    text-shadow: 2px 2px #333;
 }
 
 .contact-quote{
@@ -348,6 +354,7 @@ textarea.form-input{
     font-style: italic;
     margin-bottom: 25px;
     margin-top: 35px;
+    font-weight:500;
 }
 
 .footer-content p{
@@ -361,6 +368,11 @@ textarea.form-input{
     margin-bottom: 17px;
     font-size:14px;
     color:#666;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #eee
 }
 
 /* colors */
