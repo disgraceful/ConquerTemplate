@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+h2{
+    font-size:36px;
+}
+
 /* header  */
 
 header {
@@ -89,12 +93,11 @@ header a:hover {
 }
 
 .section-header h2{
-    font-size: 36px;
     color: #fff;
     text-transform: capitalize;
     text-shadow: 2px 2px #aaa;
-    margin-bottom: 20px;
-   
+    margin-bottom: 20px;  
+    font-weight: 500;
 }
 
 .section-header h4 {
@@ -105,17 +108,13 @@ header a:hover {
     font-weight: 500;
 }
 
-.section-header h5{
-    color: #fff;
-    text-transform: capitalize;
-    text-shadow: 2px 2px #aaa;
-    margin-bottom: 20px;
-}
-
 .section-header p{
     line-height: 1.6em;
     font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
 }
+
 /* section #2 */
 
 #section-2 {
@@ -276,10 +275,12 @@ header a:hover {
     padding-bottom: 40px;
     width: 680px;
     margin:0 auto;
+    text-align:center;
 }
 
-.contact-container>h1{
+.contact-container>h2{
     margin: 18px;
+    color: #fff;
     font-weight: 500;
     text-shadow: 2px 2px #333;
 }
@@ -291,7 +292,7 @@ header a:hover {
     border-radius: 5px;
     color: #000;
     margin-bottom: 20px;
-    padding: 20px 15px;
+    padding: 20px 5px;
     box-sizing:border-box;
 }
 
@@ -301,10 +302,9 @@ header a:hover {
 }
 
 .form-container{
-    width:100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 28px;
 }
 
 .form-input{
@@ -312,9 +312,8 @@ header a:hover {
     border: none;
     background: rgba(242, 242, 242, 0.4);
     color: #000;
-    display: block;
     height: 34px;
-    width:100%;
+    width: 100%;
     padding: 6px 12px;
     font-size: 14px;
     border-radius: 4px;
@@ -338,9 +337,8 @@ textarea.form-input{
     height:auto;
 }
 
-.form-right,
-.form-left{
-    width:100%;
+.form-right{
+    text-align: end;
 }
 
 .btn{
@@ -350,7 +348,7 @@ textarea.form-input{
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 10px;
-    border: 1px solid #262628;
+    border: none;
     transition: all 0.3s ease;
 }
 
@@ -358,6 +356,10 @@ textarea.form-input{
     background: #E6E6E6;
     border-color: #ccc; 
     color: #262628;
+}
+
+.footer-content{
+    text-align:center;
 }
 
 .footer-content h3{
@@ -375,7 +377,7 @@ textarea.form-input{
     margin-bottom: 30px;
 }
 
-.copyright p{
+.footer-content p{
     margin-top:12px;
     margin-bottom: 17px;
     font-size:14px;
@@ -442,14 +444,4 @@ hr{
 
 .align-center{
     text-align: center;
-}
-
-.align-end{
-    text-align: end;
-}
-
-
-.justify-center{ /*shit code*/
-    width: 70%;
-    margin:0 auto;
 }
