@@ -162,17 +162,20 @@ header a:hover {
 }
 
 .section-col .col-text {
-    padding: 0 20px 30px 20px;
+    padding: 15px 20px 30px 20px;
     text-align:center;
 }
 
-.grid-col-2 h3,
-.col-text p{
+.grid-col-2 h3{
     text-align:left;
 }
 
-.section-col h3 {
-    margin: 15px 0;
+.col-text p{
+    padding: 15px 0 25px 0px;
+    text-align:left;
+}
+
+.col-text h3 {
     color: #666666;
 }
 
@@ -184,12 +187,11 @@ h3.green{
     color: #178A27;
 }
 
-.grid-col-3 p{
-    padding: 15px 0;
-}
-
-.grid-col-2 p{
-    margin: 15px 0 25px 0;
+.col-btn {
+    width: 150px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #FFF;
 }
 
 .grid-col-3 .col-btn{
@@ -199,13 +201,6 @@ h3.green{
     float:right;
     margin-bottom:30px;
     margin-right:40px;
-}
-
-.col-btn {
-    width: 150px;
-    border: 1px solid;
-    border-radius: 5px;
-    color: #FFF;
 }
 
 .grid-col-2{
