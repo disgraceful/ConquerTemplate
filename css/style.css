@@ -32,8 +32,24 @@ h2{
     font-size:36px;
 }
 
-/* header  */
+hr{
+    border: 0;
+    border-top: 1px solid #eee
+}
 
+.btn{
+    background: #FFF none repeat scroll 0 0;
+    color: #666666;
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* header  */
 header {
     position: fixed;
     top: 0;
@@ -109,6 +125,7 @@ header a:hover {
 }
 
 .section-header p{
+    color: #FFF;
     line-height: 1.6em;
     font-size: 18px;
     width: 70%;
@@ -118,9 +135,7 @@ header a:hover {
 /* section #2 */
 
 #section-2 {
-    height: auto;
     padding: 55px 0px;
-    
 }
 
 #section-2 .section-container {
@@ -158,17 +173,22 @@ header a:hover {
 }
 
 .grid-col-3 .col-btn{
-    margin-right: 50px;
+    position: static;
+    color: #666666;
+    border-color: #ccc;
+    float:right;
+    margin-bottom:30px;
+    margin-right:40px;
 }
 
-.section-col .col-btn {
+.col-btn {
     width: 150px;
-    height: 45px;
-    cursor: pointer;
     border: 1px solid;
     border-radius: 5px;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    color: #FFF;
+    position:relative;
+    left:50%;
+    margin-left:-85px;
 }
 
 .grid-col-2{
@@ -190,20 +210,20 @@ header a:hover {
 /* section 4 */
 
 #section-4{
-    height:auto;
-    margin: 40px;
+    margin: 40px 0px;
 }
 
 #section-4 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 255px); /*  use minmax!*/
-    /* grid-template-rows: 1fr 2fr;    */
     justify-content: center;
-    grid-gap: 40px 40px;
+    grid-gap: 40px 20px;
 }
 
 .grid-col{
     background-color: #F2F2F2;
+    text-align:center;
+    margin: 10px;
 }
 
 .grid-col img {
@@ -215,10 +235,12 @@ header a:hover {
     font-size:20px;
     font-weight: 700;
     margin: 20px;
+    color: #666666;
 }
 
 .col-4 h2{
     margin: 15px 25px 10px 25px;
+    text-align: left;
 }
 
 .grid-col p{
@@ -234,16 +256,6 @@ header a:hover {
     margin-bottom: 10px;
 }
 
-.grid-col .col-btn{
-    width: 120px;
-    height: 45px;
-    cursor: pointer;
-    border: 1px solid #cdcdcd;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
 .col-1{
     grid-column: span 1;
     height: 500px;
@@ -251,18 +263,15 @@ header a:hover {
 
 .col-4{
     grid-column: span 4;
-
 }
 
-.col-4 .btn-container{
+.col-4 .btn{
     margin: 30px 25px;
-}
-
-.col-4 .col-btn{
     width: 160px;
+    float:left;
 }
 
-
+/* section 5 */
 #section-5{
     position: relative;
     background: transparent;
@@ -270,7 +279,6 @@ header a:hover {
 }
 
 .contact-container{
-    /* height: 100%; */
     padding-top: 80px;
     padding-bottom: 40px;
     width: 680px;
@@ -341,23 +349,7 @@ textarea.form-input{
     text-align: end;
 }
 
-.btn{
-    background: #262628 none repeat scroll 0 0;
-    color: #fff;
-    margin-top: 10px;
-    padding: 10px 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.btn:hover{
-    background: #E6E6E6;
-    border-color: #ccc; 
-    color: #262628;
-}
-
+/* footer */
 .footer-content{
     text-align:center;
 }
@@ -383,10 +375,23 @@ textarea.form-input{
     font-size:14px;
     color:#666;
 }
+    
+.btn:hover{
+    background: #E6E6E6;
+}
 
-hr{
-    border: 0;
-    border-top: 1px solid #eee
+.submit-btn{
+    background: #262628 none repeat scroll 0 0;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    width: 100px;
+}
+
+.submit-btn:hover{
+    background: #E6E6E6;
+    color: #262628;
 }
 
 /* colors */
@@ -398,16 +403,8 @@ hr{
     color:#1686C1;
 }
 
-.white-text {
-    color: #FFF;
-}
-
 .grey-text{
     color: #666666;
-}
-
-.black-text{
-    color: #000
 }
 
 .green-bg {
@@ -422,26 +419,15 @@ hr{
     background-color: #852406;    
 }
 
-.white-bg{
-    background-color: #FFF;
-}
-
-.col-btn.red-bg:hover{
+.btn.red-bg:hover{
     background: #C9302C;
 }
 
-.col-btn.blue-bg:hover{
+.btn.blue-bg:hover{
     background:#31B0D5;
 }
 
-.col-btn.green-bg:hover{
+.btn.green-bg:hover{
     background: #449D44;
 }
 
-.col-btn.white-bg:hover{
-    background: #E6E6E6 none repeat scroll 0 0;
-}
-
-.align-center{
-    text-align: center;
-}
