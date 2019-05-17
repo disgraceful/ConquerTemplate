@@ -32,6 +32,16 @@ h2{
     font-size:36px;
 }
 
+h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p{
+    font-size:14px;
+    line-height:1.6em;
+}
+
 hr{
     border: 0;
     border-top: 1px solid #eee
@@ -138,45 +148,69 @@ header a:hover {
     margin: 0 auto;
 }
 
-/* section #2 */
-
 #section-2 {
     padding: 55px 0px;
 }
 
-#section-2 .section-container {
-    display: grid;
-    grid-template-columns: repeat(6, 155px); /*  use minmax!*/
+/* grid */
+.grid{
+    display:grid;
     justify-content: center;
+}
+
+#section-2 .grid{
+    grid-template-columns: repeat(6, 155px);
     align-items: start;
     grid-gap: 50px 30px; 
 }
 
-#section-2 .section-col {
-    background-color: #F2F2F2;
+#section-4 .grid{
+    grid-template-columns: repeat(4, 255px);
+    grid-gap: 40px 20px;
 }
 
-.section-col img {
+.grid .col-1{
+    grid-column: span 1;
+}
+
+.grid .col-2{
+    grid-column: span 2;
+}
+
+.grid .col-3{
+    grid-column: span 3;
+}
+
+.grid .col-4{
+    grid-column: span 4;
+}
+
+.grid-col {
+    background-color: #F2F2F2;
+    text-align:center;
+    padding-bottom: 25px;
+}
+
+.grid img {
     max-width: 100%;
     height: auto;
 }
 
-.section-col .col-text {
-    padding: 15px 20px 30px 20px;
+.grid-col h3{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    color: #666666;
+}
+
+.col-3 h3,
+.col-1 h3{
     text-align:center;
 }
 
-.grid-col-2 h3{
-    text-align:left;
-}
-
-.col-text p{
-    padding: 15px 0 25px 0px;
-    text-align:left;
-}
-
-.col-text h3 {
-    color: #666666;
+.col-4 h3{
+    margin-top: 30px;
 }
 
 h3.blue{
@@ -187,6 +221,12 @@ h3.green{
     color: #178A27;
 }
 
+.grid-col p{
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 26px;
+}
+
 .col-btn {
     width: 150px;
     border: 1px solid;
@@ -194,24 +234,18 @@ h3.green{
     color: #FFF;
 }
 
-.grid-col-3 .col-btn{
-    position: static;
+.col-3 .col-btn{
     color: #666666;
     border-color: #ccc;
     float:right;
-    margin-bottom:30px;
     margin-right:40px;
 }
 
-.grid-col-2{
-    grid-column: span 2;
+.col-4 .btn{
+    width: 160px;
+    float:left;
+    margin-left: 20px;
 }
-
-.grid-col-3{
-    grid-column: span 3;
-}
-
-/* section 3 */
 
 #section-3{
     position: relative;
@@ -219,68 +253,8 @@ h3.green{
     height: 290px; 
 }
 
-/* section 4 */
-
 #section-4{
     margin: 40px 0px;
-}
-
-#section-4 .grid-container{
-    display: grid;
-    grid-template-columns: repeat(4, 255px); /*  use minmax!*/
-    justify-content: center;
-    grid-gap: 40px 20px;
-}
-
-.grid-col{
-    background-color: #F2F2F2;
-    text-align:center;
-    margin: 10px;
-}
-
-.grid-col img {
-    max-width: 100%;
-    height: auto;
-}
-
-.grid-col h2{
-    font-size:20px;
-    font-weight: 700;
-    margin: 20px;
-    color: #666666;
-}
-
-.col-4 h2{
-    margin: 15px 25px 10px 25px;
-    text-align: left;
-}
-
-.grid-col p{
-    padding: 0 20px;
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 1.6em
-}
-
-.col-4 p{
-    margin: 5px 5px 10px 5px;
-    margin-bottom: 10px;
-}
-
-.col-1{
-    grid-column: span 1;
-    height: 500px;
-}
-
-.col-4{
-    grid-column: span 4;
-}
-
-.col-4 .btn{
-    margin: 30px 25px;
-    width: 160px;
-    float:left;
 }
 
 /* section 5 */
@@ -402,7 +376,7 @@ textarea.form-input{
     color:#666;
 }
 
-/* colors */
+/* button colors */
 .green-bg {
     background-color: #178A27
 }
@@ -426,4 +400,3 @@ textarea.form-input{
 .btn.green-bg:hover{
     background: #449D44;
 }
-
