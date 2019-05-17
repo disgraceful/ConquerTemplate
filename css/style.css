@@ -37,6 +37,7 @@ hr{
     border-top: 1px solid #eee
 }
 
+/* generic button */
 .btn{
     background: #FFF none repeat scroll 0 0;
     color: #666666;
@@ -48,6 +49,11 @@ hr{
     font-size: 18px;
     transition: all 0.3s ease;
 }
+
+.btn:hover{
+    background: #E6E6E6;
+}
+
 
 /* header  */
 header {
@@ -141,7 +147,6 @@ header a:hover {
 #section-2 .section-container {
     display: grid;
     grid-template-columns: repeat(6, 155px); /*  use minmax!*/
-    /* grid-template-rows: 1fr 2fr; */
     justify-content: center;
     align-items: start;
     grid-gap: 50px 30px; 
@@ -158,10 +163,25 @@ header a:hover {
 
 .section-col .col-text {
     padding: 0 20px 30px 20px;
+    text-align:center;
+}
+
+.grid-col-2 h3,
+.col-text p{
+    text-align:left;
 }
 
 .section-col h3 {
     margin: 15px 0;
+    color: #666666;
+}
+
+h3.blue{
+    color:#1686C1;
+}
+
+h3.green{
+    color: #178A27;
 }
 
 .grid-col-3 p{
@@ -186,9 +206,6 @@ header a:hover {
     border: 1px solid;
     border-radius: 5px;
     color: #FFF;
-    position:relative;
-    left:50%;
-    margin-left:-85px;
 }
 
 .grid-col-2{
@@ -349,6 +366,20 @@ textarea.form-input{
     text-align: end;
 }
 
+.submit-btn{
+    background: #262628 none repeat scroll 0 0;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    width: 100px;
+}
+
+.submit-btn:hover{
+    background: #E6E6E6;
+    color: #262628;
+}
+
 /* footer */
 .footer-content{
     text-align:center;
@@ -375,38 +406,8 @@ textarea.form-input{
     font-size:14px;
     color:#666;
 }
-    
-.btn:hover{
-    background: #E6E6E6;
-}
-
-.submit-btn{
-    background: #262628 none repeat scroll 0 0;
-    color: #fff;
-    margin-top: 10px;
-    padding: 10px 30px;
-    border: none;
-    width: 100px;
-}
-
-.submit-btn:hover{
-    background: #E6E6E6;
-    color: #262628;
-}
 
 /* colors */
-.green-text {
-    color: #178A27;
-}
-
-.blue-text{
-    color:#1686C1;
-}
-
-.grey-text{
-    color: #666666;
-}
-
 .green-bg {
     background-color: #178A27
 }
