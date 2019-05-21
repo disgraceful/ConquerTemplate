@@ -22,6 +22,8 @@ html{
 body{
     scroll-padding-top: 90px; /* needs to be in html, but doesn't work atm */
     margin-top: 90px;
+    max-width:100%;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -401,37 +403,29 @@ textarea.form-input{
 
 /* media */
 
-@media only screen and (max-width: 970px) and (min-width: 770px){
+@media only screen and (max-width: 900px) and (min-width: 760px){
     header li a{
         font-size: 16px;
-        width: 100px;
-        margin: 0 10px
+        margin: 0 12px
     }
 }
 
-@media only screen and (max-width: 769px) and (min-width:531px){
-    header li a{
-        margin: 0px;
-        width:auto;
-        padding:5px;
-    }
-}
-
-@media only screen and (max-width:530px){
-    html{
-        scroll-padding-top:300px;
-    }
-
-    body{
-        margin-top: 300px;
-        scroll-padding-top:300px;
-    }
-
+@media only screen and (max-width: 759px){
     header{
         height: auto;
+        position: absolute;
     }
 
+    header li a,
     header li{
-        display:block;
+        display: block;
+        width: 100%;
+        margin: 0;        
+    }
+
+    header ul{
+        width: 90%;
     }
 }
+
+
