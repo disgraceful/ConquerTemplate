@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    scroll-padding-top: 90px;
+    scroll-padding-top: 90px; /* needs to be in html, but doesn't work atm */
     margin-top: 90px;
 }
 
@@ -63,7 +63,6 @@ hr{
 .btn:hover{
     background: #E6E6E6;
 }
-
 
 /* header  */
 header {
@@ -257,7 +256,6 @@ h3.green{
     margin: 40px 0px;
 }
 
-/* section 5 */
 #section-5{
     position: relative;
     background: transparent;
@@ -399,4 +397,41 @@ textarea.form-input{
 
 .btn.green-bg:hover{
     background: #449D44;
+}
+
+/* media */
+
+@media only screen and (max-width: 970px) and (min-width: 770px){
+    header li a{
+        font-size: 16px;
+        width: 100px;
+        margin: 0 10px
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width:531px){
+    header li a{
+        margin: 0px;
+        width:auto;
+        padding:5px;
+    }
+}
+
+@media only screen and (max-width:530px){
+    html{
+        scroll-padding-top:300px;
+    }
+
+    body{
+        margin-top: 300px;
+        scroll-padding-top:300px;
+    }
+
+    header{
+        height: auto;
+    }
+
+    header li{
+        display:block;
+    }
 }
