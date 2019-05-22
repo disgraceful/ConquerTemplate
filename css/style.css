@@ -23,7 +23,7 @@ body{
     scroll-padding-top: 90px; /* needs to be in html, but doesn't work atm */
     margin-top: 90px;
     max-width:100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 a {
@@ -150,24 +150,26 @@ header a:hover {
 }
 
 #section-2 {
-    padding: 55px 0px;
+    padding: 55px 30px;
 }
 
 /* grid */
+
 .grid{
-    display:grid;
+    display: grid;
     justify-content: center;
 }
 
 #section-2 .grid{
-    grid-template-columns: repeat(6, 155px);
+    grid-template-columns: repeat(6, minmax(100px,155px));
     align-items: start;
     grid-gap: 50px 30px; 
 }
 
 #section-4 .grid{
-    grid-template-columns: repeat(4, 255px);
+    grid-template-columns: repeat(4, minmax(160px,255px));
     grid-gap: 40px 20px;
+    padding: 10px;
 }
 
 .grid .col-1{
@@ -262,12 +264,14 @@ h3.green{
     position: relative;
     background: transparent;
     height: auto; 
+    width: 100%;
 }
 
 .contact-container{
     padding-top: 80px;
     padding-bottom: 40px;
-    width: 680px;
+    width: 90%;
+    max-width: 680px;
     margin:0 auto;
     text-align:center;
 }
@@ -403,14 +407,23 @@ textarea.form-input{
 
 /* media */
 
-@media only screen and (max-width: 900px) and (min-width: 760px){
+@media only screen and (max-width: 900px) {
     header li a{
         font-size: 16px;
         margin: 0 12px
     }
+
+    #section-4 .grid{
+        justify-items: center;
+    }
+
+    .grid .col-1{
+        grid-column: span 2;
+        max-width: 255px;
+    }
 }
 
-@media only screen and (max-width: 759px){
+@media only screen and (max-width: 796px){
     header{
         height: auto;
         position: absolute;
@@ -426,6 +439,57 @@ textarea.form-input{
     header ul{
         width: 90%;
     }
+
+    .section-header{
+        top: 60%;
+        transform: translateY(-60%);
+    }
+
+    #section-2 .grid{
+        grid-row-gap: 30px;
+    }
+
+    #section-4 .grid{
+        grid-column-gap: 0px;
+    }
+
+    .grid .col-2 {
+        grid-column: span 6;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .grid .col-3{
+        grid-column: span 6;
+        max-width: 510px;
+        min-width: 300px;
+        margin: 0 auto;
+    }
+
+    .grid .col-4{
+        grid-column: 2/span 2;
+        min-width: 450px;
+    }
+
+    .grid-col h3,
+    .grid-col p{
+        text-align:center;
+    }
+
+    .col-3 .btn{
+        float: none;
+        margin: 0;
+    }
+
+    .form-container{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
 }
 
-
+@media only screen and (max-width: 615px){
+    .grid .col-1{
+        grid-column: span 4;
+        max-width: 255px;
+    }
+}
