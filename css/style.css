@@ -3,26 +3,20 @@
     margin: 0;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-div,
-input {
+body, h1, h2, h3, h4, p, div, input {
     font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
 
-body{
-    scroll-padding-top: 90px; /* needs to be in html, but doesn't work atm */
+body {
+    scroll-padding-top: 90px;
+    /* needs to be in html, but doesn't work atm */
     margin-top: 90px;
-    max-width:100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -30,29 +24,33 @@ a {
     text-decoration: none;
 }
 
-h2{
-    font-size:36px;
+h2 {
+    font-size: 36px;
 }
 
-h3{
+h3 {
     font-size: 20px;
     font-weight: 700;
 }
 
-p{
-    font-size:14px;
-    line-height:1.6em;
+p {
+    font-size: 14px;
+    line-height: 1.6em;
 }
 
-hr{
+hr {
     border: 0;
-    border-top: 1px solid #eee
+    border-top: 1px solid #eee;
 }
 
 /* generic button */
-.btn{
-    background: #FFF none repeat scroll 0 0;
-    color: #666666;
+
+.btn {
+    --bg-color: #fff;
+    --hover-color: #e6e6e6;
+    --text-color: #666;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     cursor: pointer;
     width: 120px;
     height: 45px;
@@ -62,11 +60,13 @@ hr{
     transition: all 0.3s ease;
 }
 
-.btn:hover{
-    background: #E6E6E6;
+.btn:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
 }
 
 /* header  */
+
 header {
     position: fixed;
     top: 0;
@@ -98,7 +98,7 @@ header a {
 }
 
 header a:hover {
-    background-color: #49505F;
+    background-color: #49505f;
 }
 
 /* secion #1 */
@@ -125,11 +125,11 @@ header a:hover {
     font-weight: 500;
 }
 
-.section-header h2{
+.section-header h2 {
     color: #fff;
     text-transform: capitalize;
     text-shadow: 2px 2px #aaa;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     font-weight: 500;
 }
 
@@ -141,8 +141,8 @@ header a:hover {
     font-weight: 500;
 }
 
-.section-header p{
-    color: #FFF;
+.section-header p {
+    color: #fff;
     line-height: 1.6em;
     font-size: 18px;
     width: 70%;
@@ -155,42 +155,42 @@ header a:hover {
 
 /* grid */
 
-.grid{
+.grid {
     display: grid;
     justify-content: center;
 }
 
-#section-2 .grid{
-    grid-template-columns: repeat(6, minmax(100px,155px));
+#section-2 .grid {
+    grid-template-columns: repeat(6, minmax(100px, 155px));
     align-items: start;
-    grid-gap: 50px 30px; 
+    grid-gap: 50px 30px;
 }
 
-#section-4 .grid{
-    grid-template-columns: repeat(4, minmax(160px,255px));
+#section-4 .grid {
+    grid-template-columns: repeat(4, minmax(160px, 255px));
     grid-gap: 40px 20px;
     padding: 10px;
 }
 
-.grid .col-1{
+.grid .col-1 {
     grid-column: span 1;
 }
 
-.grid .col-2{
+.grid .col-2 {
     grid-column: span 2;
 }
 
-.grid .col-3{
+.grid .col-3 {
     grid-column: span 3;
 }
 
-.grid .col-4{
+.grid .col-4 {
     grid-column: span 4;
 }
 
 .grid-col {
-    background-color: #F2F2F2;
-    text-align:center;
+    background-color: #f2f2f2;
+    text-align: center;
     padding-bottom: 25px;
 }
 
@@ -199,7 +199,7 @@ header a:hover {
     height: auto;
 }
 
-.grid-col h3{
+.grid-col h3 {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -207,24 +207,23 @@ header a:hover {
     color: #666666;
 }
 
-.col-3 h3,
-.col-1 h3{
-    text-align:center;
+.col-3 h3, .col-1 h3 {
+    text-align: center;
 }
 
-.col-4 h3{
+.col-4 h3 {
     margin-top: 30px;
 }
 
-h3.blue{
-    color:#1686C1;
+h3.blue {
+    color: #1686c1;
 }
 
-h3.green{
-    color: #178A27;
+h3.green {
+    color: #178a27;
 }
 
-.grid-col p{
+.grid-col p {
     text-align: left;
     padding: 0 20px;
     margin-bottom: 26px;
@@ -234,56 +233,56 @@ h3.green{
     width: 150px;
     border: 1px solid;
     border-radius: 5px;
-    color: #FFF;
+    --text-color: #fff;
 }
 
-.col-3 .col-btn{
+.col-3 .col-btn {
     color: #666666;
     border-color: #ccc;
-    float:right;
-    margin-right:40px;
+    float: right;
+    margin-right: 40px;
 }
 
-.col-4 .btn{
+.col-4 .btn {
     width: 160px;
-    float:left;
+    float: left;
     margin-left: 20px;
 }
 
-#section-3{
+#section-3 {
     position: relative;
     background: transparent;
-    height: 290px; 
+    height: 290px;
 }
 
-#section-4{
+#section-4 {
     margin: 40px 0px;
 }
 
-#section-5{
+#section-5 {
     position: relative;
     background: transparent;
-    height: auto; 
+    height: auto;
     width: 100%;
 }
 
-.contact-container{
+.contact-container {
     padding-top: 80px;
     padding-bottom: 40px;
     width: 90%;
     max-width: 680px;
-    margin:0 auto;
-    text-align:center;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.contact-container>h2{
+.contact-container>h2 {
     margin: 18px;
     color: #fff;
     font-weight: 500;
     text-shadow: 2px 2px #333;
 }
 
-.contact-quote{
+.contact-quote {
     width: 100%;
     margin: 0 auto;
     background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
@@ -291,22 +290,22 @@ h3.green{
     color: #000;
     margin-bottom: 20px;
     padding: 20px 5px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-.contact-quote p{
-    font-size:16px;
+.contact-quote p {
+    font-size: 16px;
     line-height: 1.6em;
 }
 
-.form-container{
+.form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 28px;
 }
 
-.form-input{
-    outline:none;
+.form-input {
+    outline: none;
     border: none;
     background: rgba(242, 242, 242, 0.4);
     color: #000;
@@ -322,25 +321,26 @@ h3.green{
     border: 1px solid transparent;
 }
 
-.form-input:focus{
+.form-input:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
-.form-input::placeholder{
+.form-input::placeholder {
     color: #000;
 }
 
-textarea.form-input{
-    height:auto;
+textarea.form-input {
+    height: auto;
 }
 
-.form-right{
+.form-right {
     text-align: end;
 }
 
-.submit-btn{
-    background: #262628 none repeat scroll 0 0;
+.submit-btn {
+    --bg-color: #262628;
+    --text-color: var(--bg-color);
     color: #fff;
     margin-top: 10px;
     padding: 10px 30px;
@@ -348,147 +348,118 @@ textarea.form-input{
     width: 100px;
 }
 
-.submit-btn:hover{
-    background: #E6E6E6;
-    color: #262628;
-}
-
 /* footer */
-.footer-content{
-    text-align:center;
+
+.footer-content {
+    text-align: center;
 }
 
-.footer-content h3{
+.footer-content h3 {
     color: #666;
     font-size: 32px;
     font-style: italic;
     margin-bottom: 25px;
     margin-top: 35px;
-    font-weight:500;
+    font-weight: 500;
 }
 
-.footer-content p{
+.footer-content p {
     color: #666;
     font-style: italic;
     margin-bottom: 30px;
 }
 
-.footer-content p{
-    margin-top:12px;
+.footer-content p {
+    margin-top: 12px;
     margin-bottom: 17px;
-    font-size:14px;
-    color:#666;
+    font-size: 14px;
+    color: #666;
 }
 
-/* button colors */
-.green-bg {
-    background-color: #178A27
+.btn.green {
+    --bg-color: #178a27;
+    --hover-color: #449d44;
 }
 
-.blue-bg{
-    background-color: #1686C1;
+.btn.blue {
+    --bg-color: #1686c1;
+    --hover-color: #31b0d5;
 }
 
-.red-bg{
-    background-color: #852406;    
-}
-
-.btn.red-bg:hover{
-    background: #C9302C;
-}
-
-.btn.blue-bg:hover{
-    background:#31B0D5;
-}
-
-.btn.green-bg:hover{
-    background: #449D44;
+.btn.red {
+    --bg-color: #852406;
+    --hover-color: #c9302c;
 }
 
 /* media */
 
 @media only screen and (max-width: 900px) {
-    header li a{
+    header li a {
         font-size: 16px;
-        margin: 0 12px
+        margin: 0 12px;
     }
-
-    #section-4 .grid{
+    #section-4 .grid {
         justify-items: center;
     }
-
-    .grid .col-1{
+    .grid .col-1 {
         grid-column: span 2;
         max-width: 255px;
     }
 }
 
-@media only screen and (max-width: 796px){
-    header{
+@media only screen and (max-width: 796px) {
+    header {
         height: auto;
         position: absolute;
     }
-
-    header li a,
-    header li{
+    header li a, header li {
         display: block;
         width: 100%;
-        margin: 0;        
+        margin: 0;
     }
-
-    header ul{
+    header ul {
         width: 90%;
     }
-
-    .section-header{
+    .section-header {
         top: 60%;
         transform: translateY(-60%);
     }
-
-    #section-2 .grid{
+    #section-2 .grid {
         grid-row-gap: 30px;
     }
-
-    #section-4 .grid{
+    #section-4 .grid {
         grid-column-gap: 0px;
     }
-
     .grid .col-2 {
         grid-column: span 6;
         max-width: 360px;
         margin: 0 auto;
     }
-
-    .grid .col-3{
+    .grid .col-3 {
         grid-column: span 6;
         max-width: 510px;
         min-width: 300px;
         margin: 0 auto;
     }
-
-    .grid .col-4{
-        grid-column: 2/span 2;
+    .grid .col-4 {
+        grid-column: 2 / span 2;
         min-width: 450px;
     }
-
-    .grid-col h3,
-    .grid-col p{
-        text-align:center;
+    .grid-col h3, .grid-col p {
+        text-align: center;
     }
-
-    .col-3 .btn{
+    .col-3 .btn {
         float: none;
         margin: 0;
     }
-
-    .form-container{
+    .form-container {
         grid-template-columns: 1fr;
         grid-gap: 0px;
     }
 }
 
-@media only screen and (max-width: 615px){
-    .grid .col-1{
+@media only screen and (max-width: 615px) {
+    .grid .col-1 {
         grid-column: span 4;
         max-width: 255px;
     }
